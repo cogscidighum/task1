@@ -11,7 +11,7 @@
     /* preload images */
     var preload = {
       type: jsPsychPreload,
-      images: ['img/blue.png', 'img/orange.png', 'img/ai.png','natural.png']
+      images: ['img/ai.png','natural.png']
     };
     timeline.push(preload);
 
@@ -26,21 +26,12 @@
     var instructions = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
-        <p>In condition A a circle will appear in the center 
-        of the screen.</p><p>If the circle is <strong>blue</strong>, 
-        press the letter F on the keyboard as fast as you can.</p>
-        <p>If the circle is <strong>orange</strong>, press the letter J 
-        as fast as you can.</p>
-        <p>In condition B a castle will appear in the center 
+        <p>Here a castle will appear in the center 
         of the screen.</p><p>If the castle is <strong>ai made</strong>, 
         press the letter F on the keyboard as fast as you can.</p>
         <p>If the castle is <strong>natural</strong>, press the letter J 
         as fast as you can.</p>
         <div style='width: 700px;'>
-        <div style='float: left;'><img src='img/blue.png'></img>
-        <p class='small'><strong>Press the F key</strong></p></div>
-        <div style='float: right;'><img src='img/orange.png'></img>
-        <p class='small'><strong>Press the J key</strong></p></div>
         <div style='float: left;'><img src='img/ai.png'></img>
         <p class='small'><strong>Press the F key</strong></p></div>
         <div style='float: right;'><img src='img/natural.png'></img>
