@@ -11,7 +11,7 @@
     /* preload images */
     var preload = {
       type: jsPsychPreload,
-      images: ['img/ai.png','natural.png']
+      images: ['img/blue.png', 'img/orange.png']
     };
     timeline.push(preload);
 
@@ -26,18 +26,18 @@
     var instructions = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
-        <p>Here a castle will appear in the center 
-        of the screen.</p><p>If the castle is <strong>ai made</strong>, 
+        <p>In this experiment, a circle will appear in the center 
+        of the screen.</p><p>If the circle is <strong>blue</strong>, 
         press the letter F on the keyboard as fast as you can.</p>
-        <p>If the castle is <strong>natural</strong>, press the letter J 
+        <p>If the circle is <strong>orange</strong>, press the letter J 
         as fast as you can.</p>
         <div style='width: 700px;'>
-        <div style='float: left;'><img src='img/ai.png'></img>
+        <div style='float: left;'><img src='img/blue.png'></img>
         <p class='small'><strong>Press the F key</strong></p></div>
-        <div style='float: right;'><img src='img/natural.png'></img>
+        <div style='float: right;'><img src='img/orange.png'></img>
         <p class='small'><strong>Press the J key</strong></p></div>
         </div>
-        <p>Press any key to begin.</p>b
+        <p>Press any key to begin.</p>
       `,
       post_trial_gap: 2000
     };
@@ -45,8 +45,8 @@
 
     /* define trial stimuli array for timeline variables */
     var test_stimuli = [
-      { stimulus: "img/ai.png",  correct_response: 'f'},
-      { stimulus: "img/natural.png",  correct_response: 'j'}
+      { stimulus: "img/blue.png",  correct_response: 'f'},
+      { stimulus: "img/orange.png",  correct_response: 'j'}
     ];
 
     /* define fixation and test trials */
