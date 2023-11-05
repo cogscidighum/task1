@@ -46,7 +46,7 @@
     /* define trial stimuli array for timeline variables */
     var test_stimuli = [
       { stimulus: "img/ai.png",  correct_response: 'f'},
-      { stimulus: "img/natural.png",  correct_response: 'j'
+      { stimulus: "img/natural.png",  correct_response: 'j'}
     ];
 
     /* define fixation and test trials */
